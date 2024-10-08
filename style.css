@@ -30,7 +30,7 @@
 }
 
 
-.navbar{
+.navigation{
 
     width: 100%;
     height: 80px;
@@ -43,9 +43,9 @@
 label.logo{
     
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 40px;
     line-height: 80px;
-    padding: 10px 100px;
+    padding: 20px 100px;
     display:inline;
     /* margin-left: 7%; */
     /* background-color: antiquewhite; */
@@ -55,7 +55,7 @@ label.logo{
 .logo-img{
     width: 50px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: -20px;
 }
 
 
@@ -70,22 +70,23 @@ label.logo{
 
 
 
-.navbar ul{
+.navigation ul{
     float: right;
     margin-right:60px ;
 }
 
-.navbar ul li{
+.navigation ul li{
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 80px;
 }
-.navbar ul li a{
+.navigation ul li a{
     height: 70px;
     text-align: center;
    color: #fcfcfc;
     padding: 20px 30px;
     font-weight: 500;
+    text-decoration: none;
 
 }
 /* a:hover{
@@ -137,38 +138,35 @@ label.logo{
 }
 .main-block h1{
     position: absolute;
-    /* top: 45%; */
+    
     top:30%;
     left: 23%;
-    /* left: 35%; */
-    /* color: #8a482e; */
+    
     color: #543028;
     font-size: 90px;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
-    text-shadow: -10px 10px 15px rgb(122, 120, 120);
-}
+    text-shadow: -10px 10px 15px rgb(122, 120, 120);}
+
 .main-block p{
     width: 700px;
     position: absolute;
-    /* top: 32%; */
+   
     left: 45%;
     top: 60%;
-    /* color: #8a482e; */
+    
     color: #c19d56;
     font-size: 38px;
     font-family: "Cormorant", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: italic;
-    /* text-shadow: -10px 10px 15px rgb(122, 120, 120); */
 }
 .main-block p i{
     color: #c19d56;
     font-size: 30px;
     
 }
-
 .transition-2{
 
     width: 100%;
@@ -180,147 +178,122 @@ label.logo{
     overflow: hidden;
     background-attachment: fixed;
 
-    position: relative;
-
 }
 
-
-
-.menu-block{
+.service-block
+{
     width: 100%;
+    height: 850px;
     margin: auto;
-    /* background-color: #2dbba4; */
-    height: 880px;
-    background-image: url(Images/bg-2.png);
+   /* background-color: #48753e; */
+   background-image: url(Images/bg-2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    position: relative;
+}
+.heading-service{
+    margin-bottom: 7%;
+}
+.service-cards{
+    width: 85%;
+    height: 450px;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #2dbba4; */
     
 }
-.block-images{
-    width: 250px;
-    height: 250px;
-    /* background-color: #2dbba4; */
-    position: absolute;
-    top: -15%;
-    left: 3%;
-}
-
-
-.menu-cards-1{
-    width: 85%;
-    margin: auto;
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.menu-1{
+.cards{
     width: 30%;
-    height: 280px;
-    /* background-color: #49b57a; */
-    position: relative;
-    font-family: Cormorant;
-    font-style: italic;
-}
-
-.menu-1 a{
-    color: black ;
-}
-
-.menu-img{
-    width: 100%;
-    height: 200px;
-    /* background-color: #543028; */
-}
-.menu-img img{
-    width: 100%;
-    height: 200px;
+    /* height: 450px; */
+    background-color: #d2d2d3;
     border-radius: 20px;
-    /* border: 2px solid #543028; */
+    border: 5px solid rgb(148, 148, 148);
 }
 
-.menu-img  :hover{
-  
-    border: 3px solid #543028;
-}
-
-
-.menu-title{
-    font-family: "Cormorant", serif;
-    /* font-optical-sizing: auto; */
-    font-weight: 400;
-    font-style: italic;
-}
-.menu-title:hover{
-    color: #cd9122;
-}
-.menu-title-1 {
-    position: absolute;
-    top: 78%;
-    left: 38%;
-}
-
-.menu-title-2{
-    position: absolute;
-    top: 78%;
-    left: 35%;
-}
-
-.menu-title-3 {
-    position: absolute;
-    top: 78%;
-    left: 30%;
-}
-
-.menu-title-4{
-    position: absolute;
-    top: 78%;
-    left: 30%;
-}
-
-.menu-title-5 {
-    position: absolute;
-    top: 78%;
-    left: 35%;
-}
-
-.menu-title-6 {
-    position: absolute;
-    top: 78%;
-    left: 20%;
-}
-
-
-.menu-cards-2{
-    width: 85%;
+.service-img
+{
+    width: 55%;
+    height: 40%;
     margin: auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: -70px;
+    
+}
+
+.service-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid white;
 }
 
 
-@media screen and (max-width:480px){
+
+.cards h2{
+    margin: auto;
+    margin-top: 8%;
+    color: #543028;
+    /* width: 40%; */
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.cards p{
+    text-align: center;
+    font-size: 20px;
+    /* margin: auto; */
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.cards button{
+    /* background-color: #c93a39; */
+    background: none;
+    border: 3px solid #543028;
+    border-radius: 10px;
+    width: 90px;
+    margin-left: 35%;
+    font-size: 25px;
+    color: #543028;
+    padding: 10px;
+}
+.cards:hover
+{
+    border: 5px solid rgb(82, 82, 82);
+}
+.cards button:hover
+{
+    border: 1px solid #000000;
+    background-color: #543028;
+    color: #f8f1e4;
+}
+
+
+@media screen and (max-width:394px){
 
 
    
-    .navbar{
-        width: 100%;
+    .navigation{
+        
         height: 65px;
     }
     label.logo{
+        display: block;
+        width: 300px;
         font-size: 25px;
         padding-left: 15px; 
+        padding-right: 0;
+        padding-top: 0;
        
     }
     .logo-img{
-        width: 30px;
-        height: 30px;
-        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+        /* margin-top: 0.01px; */
+        margin-right: 5px;
     }
 
     .checkbtn{
@@ -343,13 +316,13 @@ label.logo{
         text-align: center;
     }
 
-    .navbar ul li{
+    .navigation  ul li{
         display: block;
         margin: 10px 0;
         /* line-height: 30px; */
     }
 
-    .navbar ul li a{
+    .navigation ul li a{
         font-size: 25px;
         padding-top: 26px;
         color: #543028;
@@ -370,7 +343,6 @@ label.logo{
     }
 
     .main-block{
-        width: 100%;
         height:560px;
     }
 
@@ -378,7 +350,7 @@ label.logo{
         width: 150px;
         height: 400px;
         position: absolute;
-        top: 33%;
+        top: 30%;
         left: 0%;
     }
 
@@ -392,17 +364,17 @@ label.logo{
 
     .main-block h1{
         position: absolute; 
-        top:41%;
-        left: 23%;
-        font-size: 30px;
+        top:30%;
+        left: 15%;
+        font-size: 35px;
         
     }
 
     .main-block p{
-        width: 280px;
+        width: 300px;
         position: absolute;
-        left: 30%;
-        top: 51%;
+        left: 20%;
+        top: 40%;
         font-size: 20px;
         
     }
@@ -441,31 +413,29 @@ label.logo{
         height: 30px;
         margin-top: 10px;
     }
+    .service-cards{
+        margin-top: 25%;
+        margin-left: 8%;
+        /* background-color: aquamarine; */
+    }
+
+    .cards{
+        width: 320px;
+        height: 400px;
+        /* margin-top: 40%; */
+    }
+    .cards h2{
+        font-size: 30px;
+    }
+    .cards p{
+        font-size: 15px;
+    }
+    .cards button{
+        width: 65px;
+        margin-left: 40%;
+        font-size: 18px;
+        padding: 10px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
