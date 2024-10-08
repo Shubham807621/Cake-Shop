@@ -343,7 +343,7 @@ label.logo{
     }
 
     .main-block{
-        height:560px;
+        height:580px;
     }
 
     .main-block .landing-1{
@@ -364,7 +364,7 @@ label.logo{
 
     .main-block h1{
         position: absolute; 
-        top:30%;
+        top:40%;
         left: 15%;
         font-size: 35px;
         
@@ -374,7 +374,7 @@ label.logo{
         width: 300px;
         position: absolute;
         left: 20%;
-        top: 40%;
+        top: 50%;
         font-size: 20px;
         
     }
